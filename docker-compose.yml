@@ -6,7 +6,7 @@ services:
     container_name: mssqlbkp
     working_dir : /var/opt/mssql
     environment:
-      ACCEPT_EULA: Y
+      ACCEPT_EULA: "Y"
       SA_PASSWORD: PWD@1234
     ports:
       - 1410:1433
