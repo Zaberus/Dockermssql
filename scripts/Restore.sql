@@ -1,6 +1,3 @@
-SELECT 1 AS OKDOKI
-
-/*
 DECLARE @Backup      AS VARCHAR(100) = 'AdventureWorks2017.bak'
 DECLARE @PathData    AS VARCHAR(255) ='/var/opt/mssql/data/'
 DECLARE @PathBkp     AS VARCHAR(255) ='/var/opt/mssql/bkp/'
@@ -73,7 +70,5 @@ WHERE PhysicalName LIKE '%ldf'
 DBCC SHRINKFILE (@LogicalNameLog, 1);
 
 DROP TABLE #DBFilesData
-
-*/
 
 
