@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  db:
+    build: .
+    container_name: rubistermino
+    working_dir : /var/opt/mssql
+    environment:
+      ACCEPT_EULA: Y
+      SA_PASSWORD: DSI@1234
+    ports:
+      - 1410:1433
+    volumes :
+      - ./scripts:/var/opt/mssql/scripts
+      - ./bkp:/var/opt/mssql/bkp
+    command: ["/bin/bash", "/var/opt/mssql/scripts/Restore.sh", "start"]
