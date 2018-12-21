@@ -12,5 +12,5 @@ services:
       - 1410:1433
     volumes:
       - ./scripts:/var/opt/mssql/scripts
-      - /Users/mbp_principal/bkp:/var/opt/mssql/bkp
+      - ./bkp:/var/opt/mssql/bkp
     command: ["/var/opt/mssql/scripts/Main.sh"]
