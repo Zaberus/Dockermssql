@@ -13,4 +13,4 @@ services:
     volumes:
       - ./scripts:/var/opt/mssql/scripts
       - ./bkp:/var/opt/mssql/bkp
-    command: ["/var/opt/mssql/scripts/Main.sh"]
+    command: ["/var/opt/mssql/scripts/main.sh"]
